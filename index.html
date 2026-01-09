@@ -3,19 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Gurasees Singh Rai — AI/ML & Data Engineer. Projects in LLMs/RAG, ML systems, and analytics." />
-  <meta name="theme-color" content="#0b1220" />
 
   <title>Gurasees Singh Rai — Portfolio</title>
+  <meta name="description" content="Gurasees Singh Rai — AI/ML & Data Engineer. LLMs, RAG, analytics, and end-to-end ML systems." />
 
-  <!-- Open Graph (nice previews on LinkedIn) -->
+  <!-- Open Graph (LinkedIn preview) -->
   <meta property="og:title" content="Gurasees Singh Rai — Portfolio" />
-  <meta property="og:description" content="AI/ML & Data Engineer. Projects in LLMs/RAG, ML systems, and analytics." />
+  <meta property="og:description" content="AI/ML & Data Engineer • LLMs • RAG • Analytics" />
   <meta property="og:type" content="website" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/script.js"></script>
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <script defer src="./assets/script.js"></script>
 </head>
 
 <body>
@@ -46,12 +44,14 @@
       <div class="hero" id="content">
         <div class="hero__left">
           <p class="eyebrow">Open to full-time roles</p>
+
           <h1 class="hero__headline">
             I build practical ML + GenAI systems with clean engineering and measurable results.
           </h1>
+
           <p class="hero__subhead">
-            I work across end-to-end ML: data pipelines → modeling → evaluation → deployment-style delivery.
-            Recent focus: LLM apps (RAG/agents), model training, and analytics workflows.
+            End-to-end ML and LLM applications: data pipelines → modeling → evaluation → deployment-style delivery.
+            Recent focus: RAG/agents, model training, and analytics workflows.
           </p>
 
           <div class="hero__cta">
@@ -59,30 +59,29 @@
             <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           </div>
 
-          <div class="hero__links">
+          <div class="hero__links" aria-label="Links">
             <a class="link-pill" href="https://github.com/guraseesrai" target="_blank" rel="noreferrer">
               <span aria-hidden="true">↗</span> GitHub
             </a>
-            <a class="link-pill" href="#" target="_blank" rel="noreferrer" id="linkedinLink">
+            <a class="link-pill" href="https://www.linkedin.com/in/gurasees-singh-rai-2949192ab/" target="_blank" rel="noreferrer">
               <span aria-hidden="true">↗</span> LinkedIn
             </a>
-            <a class="link-pill" href="mailto:your.email@example.com" id="emailLink">
-              <span aria-hidden="true">✉</span> Email
+            <a class="link-pill" href="mailto:guraseesrai2@gmail.com">
+              <span aria-hidden="true">✉</span> guraseesrai2@gmail.com
+            </a>
+            <a class="link-pill" href="tel:+14086807324">
+              <span aria-hidden="true">☎</span> (408) 680-7324
             </a>
           </div>
-
-          <p class="note">
-            Tip: update LinkedIn + email links in <code>index.html</code> (search for <code>linkedinLink</code> and <code>your.email@example.com</code>).
-          </p>
         </div>
 
         <div class="hero__right">
           <div class="card card--highlight">
-            <div class="card__title">What I’m best at</div>
+            <div class="card__title">Core strengths</div>
             <ul class="bullets">
-              <li>Building ML pipelines that are reproducible, testable, and measurable</li>
+              <li>Reproducible ML pipelines (training, eval, error analysis)</li>
               <li>LLM apps: chunking/embeddings, vector search, RAG/agents, evaluation loops</li>
-              <li>Turning messy data into decision-ready analytics and insights</li>
+              <li>Analytics workflows that turn messy data into decisions</li>
             </ul>
             <div class="card__meta">
               <span class="tag">Python</span>
@@ -95,24 +94,21 @@
           </div>
 
           <div class="card">
-            <div class="card__title">Quick stats (edit these)</div>
+            <div class="card__title">Highlights</div>
             <div class="stats">
               <div class="stat">
-                <div class="stat__num">3–5</div>
-                <div class="stat__label">featured projects</div>
+                <div class="stat__num">541K</div>
+                <div class="stat__label">transactions analyzed</div>
               </div>
               <div class="stat">
-                <div class="stat__num">1</div>
-                <div class="stat__label">page, recruiter-friendly</div>
+                <div class="stat__num">38</div>
+                <div class="stat__label">countries covered</div>
               </div>
               <div class="stat">
-                <div class="stat__num">0</div>
-                <div class="stat__label">unnecessary fluff</div>
+                <div class="stat__num">3.98</div>
+                <div class="stat__label">MEng GPA</div>
               </div>
             </div>
-            <p class="muted">
-              Replace stats with real numbers later (accuracy gains, runtime improvements, dataset size, users, etc.).
-            </p>
           </div>
         </div>
       </div>
@@ -120,123 +116,131 @@
   </header>
 
   <main class="container">
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section__head">
-        <h2>Featured projects</h2>
-        <p class="muted">Pick 3–5 strong projects. Add numbers and links. Keep it easy to scan.</p>
+        <h2>Projects</h2>
+        <p class="muted">Strong, scannable work with direct links.</p>
       </div>
 
       <div class="grid">
         <article class="card">
-          <div class="card__kicker">ML Research • Bioinformatics</div>
-          <h3 class="card__title">Plant miRNA cut-site prediction</h3>
-          <p class="card__text">
-            Sequence-structure modeling for cut-site prediction. Built data preprocessing + training pipeline and evaluated with range-aware metrics.
-          </p>
-          <ul class="bullets">
-            <li>Model: BiLSTM (sequence + structure features)</li>
-            <li>Pipeline: parsing → feature extraction → training/eval</li>
-            <li><strong>Impact:</strong> add your best metric here (e.g., +X% exact / ±1 accuracy)</li>
-          </ul>
-          <div class="card__meta">
-            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">HPC</span>
-          </div>
-          <div class="card__links">
-            <a href="#" target="_blank" rel="noreferrer">Code ↗</a>
-            <a href="#" target="_blank" rel="noreferrer">Write-up ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
           <div class="card__kicker">Computer Vision</div>
-          <h3 class="card__title">Deepfake detection pipeline</h3>
+          <h3 class="card__title">Deepfake detector (hybrid transformer)</h3>
           <p class="card__text">
-            Video deepfake classification workflow with clear evaluation, sanity checks, and reproducible runs.
+            Video deepfake detection pipeline with a focus on robust evaluation, reproducible training, and clear reporting.
           </p>
           <ul class="bullets">
-            <li>Data handling: frame sampling, preprocessing, batching</li>
-            <li>Evaluation: ROC/AUC, precision/recall, error analysis</li>
-            <li><strong>Impact:</strong> add speed/accuracy improvements or leaderboard results</li>
+            <li>Pipeline: preprocessing → training → evaluation → error analysis</li>
+            <li>Designed for clean iteration and measurable improvements</li>
           </ul>
           <div class="card__meta">
             <span class="tag">PyTorch</span><span class="tag">CV</span><span class="tag">Video</span>
           </div>
           <div class="card__links">
-            <a href="#" target="_blank" rel="noreferrer">Code ↗</a>
-            <a href="#" target="_blank" rel="noreferrer">Demo ↗</a>
+            <a href="https://github.com/guraseesrai/deepfake-detector-hybrid-transformer" target="_blank" rel="noreferrer">Code ↗</a>
+            <a href="https://github.com/guraseesrai/deepfake-detector-hybrid-transformer#readme" target="_blank" rel="noreferrer">Readme ↗</a>
           </div>
         </article>
 
         <article class="card">
           <div class="card__kicker">LLM Apps</div>
-          <h3 class="card__title">Custom Learning Studio (RAG + quiz generation)</h3>
+          <h3 class="card__title">Custom Learning Studio (RAG + quizzes)</h3>
           <p class="card__text">
-            Document ingestion, chunking, embeddings, retrieval, and structured quiz generation with a clean interface and evaluation mindset.
+            Document ingestion → chunking → embeddings → retrieval, plus structured quiz generation for learning workflows.
           </p>
           <ul class="bullets">
-            <li>Ingestion: PDFs/docs → chunking → embeddings → vector store</li>
-            <li>RAG: retrieval + guardrails + citations-style output</li>
-            <li><strong>Impact:</strong> add latency, cost, or quality improvements</li>
+            <li>Built ingestion + retrieval flow for consistent, grounded answers</li>
+            <li>Focused on structure, reliability, and evaluation mindset</li>
           </ul>
           <div class="card__meta">
-            <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Vector DB</span>
+            <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Embeddings</span>
           </div>
           <div class="card__links">
-            <a href="#" target="_blank" rel="noreferrer">Code ↗</a>
-            <a href="#" target="_blank" rel="noreferrer">Architecture ↗</a>
+            <a href="https://github.com/guraseesrai/custom-learning-studio" target="_blank" rel="noreferrer">Code ↗</a>
+            <a href="https://github.com/guraseesrai/custom-learning-studio#readme" target="_blank" rel="noreferrer">Readme ↗</a>
           </div>
         </article>
 
         <article class="card">
           <div class="card__kicker">Analytics</div>
-          <h3 class="card__title">E-commerce customer analytics</h3>
+          <h3 class="card__title">E-commerce analytics</h3>
           <p class="card__text">
-            End-to-end analytics: cleaning → feature engineering → segmentation → reporting. Focused on business-ready insights.
+            End-to-end analytics: cleaning → feature engineering → segmentation → insights, designed for stakeholder readability.
           </p>
           <ul class="bullets">
-            <li>RFM segmentation + clustering + interpretation</li>
-            <li>Dashboards/visualizations for stakeholders</li>
-            <li><strong>Impact:</strong> add insights delivered, time saved, or decision outcomes</li>
+            <li>Exploratory analysis + segmentation to surface high-value customer patterns</li>
+            <li>Clear visuals and business-ready summaries</li>
           </ul>
           <div class="card__meta">
-            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Analytics</span>
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SQL</span>
           </div>
           <div class="card__links">
-            <a href="#" target="_blank" rel="noreferrer">Notebook ↗</a>
-            <a href="#" target="_blank" rel="noreferrer">Dashboard ↗</a>
+            <a href="https://github.com/guraseesrai/ecommerce-analytics" target="_blank" rel="noreferrer">Code ↗</a>
+            <a href="https://github.com/guraseesrai/ecommerce-analytics#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__kicker">People Analytics</div>
+          <h3 class="card__title">HR analytics: employee attrition</h3>
+          <p class="card__text">
+            Attrition analysis and baseline modeling to identify drivers and build a prediction-ready workflow.
+          </p>
+          <ul class="bullets">
+            <li>Pipeline: cleaning → encoding → feature engineering → modeling</li>
+            <li>Interpretability-first EDA for decision support</li>
+          </ul>
+          <div class="card__meta">
+            <span class="tag">Python</span><span class="tag">ML</span><span class="tag">Analytics</span>
+          </div>
+          <div class="card__links">
+            <a href="https://github.com/guraseesrai/hr-analytics-employee-attrition" target="_blank" rel="noreferrer">Code ↗</a>
+            <a href="https://github.com/guraseesrai/hr-analytics-employee-attrition#readme" target="_blank" rel="noreferrer">Readme ↗</a>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="section__head">
         <h2>Experience</h2>
-        <p class="muted">Short, outcome-focused. One or two lines per bullet.</p>
+        <p class="muted">Outcome-focused work across research and applied ML.</p>
       </div>
 
       <div class="card">
         <div class="timeline">
           <div class="timeline__item">
-            <div class="timeline__when">Oregon State University • Research</div>
+            <div class="timeline__when">Oregon State University • Aug 2025 – Present</div>
             <div class="timeline__what">
-              <strong>ML Research / Applied AI</strong>
+              <strong>AI Research Intern</strong>
               <ul class="bullets">
-                <li>Built ML pipelines and experiments with reproducible training/evaluation</li>
-                <li>Collaborated with stakeholders; communicated results clearly</li>
-                <li>Worked in Linux/HPC environments for large-scale runs</li>
+                <li>Built preprocessing pipeline for RNA cut-site prediction with leak-free splits and one-hot encoding.</li>
+                <li>Trained baseline ML + LSTM models; tracked AUROC / PR-AUC for evaluation.</li>
+                <li>Served models with FastAPI endpoints for real-time scoring.</li>
               </ul>
             </div>
           </div>
 
           <div class="timeline__item">
-            <div class="timeline__when">Projects • Engineering</div>
+            <div class="timeline__when">Oregon State University • Feb 2025 – Jun 2025</div>
             <div class="timeline__what">
-              <strong>End-to-end builds</strong>
+              <strong>Applied AI Research Assistant</strong>
               <ul class="bullets">
-                <li>LLM apps (RAG, embeddings, chunking, evaluation loops)</li>
-                <li>Analytics pipelines and dashboards</li>
-                <li>Model training + error analysis + iteration</li>
+                <li>Built LangChain + GPT-4 doc pipeline (PDF/Word → scripts) with chunking (1000/100).</li>
+                <li>Added token management and dynamic truncation to reduce failed calls.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__when">Techlive Solutions • Jan 2022 – Jun 2022</div>
+            <div class="timeline__what">
+              <strong>Data Analyst Intern</strong>
+              <ul class="bullets">
+                <li>Built scikit-learn preprocessing pipeline for housing price prediction (impute/scale/encode).</li>
+                <li>Engineered ratio features; validated with EDA and model evaluation.</li>
               </ul>
             </div>
           </div>
@@ -244,10 +248,11 @@
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="section__head">
         <h2>Skills</h2>
-        <p class="muted">Group them so recruiters can scan in 5 seconds.</p>
+        <p class="muted">Grouped for quick recruiter scanning.</p>
       </div>
 
       <div class="grid grid--3">
@@ -274,20 +279,22 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="section__head">
         <h2>Contact</h2>
-        <p class="muted">Make it easy to reach you.</p>
+        <p class="muted">Fastest way to reach me is email.</p>
       </div>
 
       <div class="card contact">
         <div class="contact__left">
-          <p class="contact__headline">Want to collaborate or hire?</p>
-          <p class="muted">Email is best. I usually reply within 24–48 hours.</p>
+          <p class="contact__headline">Let’s connect</p>
+          <p class="muted">Open to AI/ML, GenAI, and data roles.</p>
         </div>
         <div class="contact__right">
-          <a class="btn btn--primary" href="mailto:your.email@example.com" id="emailBtn">Email me</a>
-          <button class="btn btn--ghost" type="button" id="copyEmailBtn" data-email="your.email@example.com">
+          <a class="btn btn--primary" href="mailto:guraseesrai2@gmail.com" id="emailBtn">Email</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/gurasees-singh-rai-2949192ab/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <button class="btn btn--ghost" type="button" id="copyEmailBtn" data-email="guraseesrai2@gmail.com">
             Copy email
           </button>
         </div>
@@ -295,7 +302,7 @@
     </section>
 
     <footer class="footer">
-      <div class="muted">© <span id="year"></span> Gurasees Singh Rai • Built on GitHub Pages</div>
+      <div class="muted">© <span id="year"></span> Gurasees Singh Rai</div>
     </footer>
   </main>
 </body>
