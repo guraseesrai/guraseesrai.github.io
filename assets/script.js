@@ -7,24 +7,28 @@
   // Year
   if (year) year.textContent = new Date().getFullYear();
 
-  // Theme: prefer saved choice, else system preference
+  // Theme: saved choice > system preference
   const saved = localStorage.getItem("theme");
-  const systemPrefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  const prefersLight =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: light)").matches;
 
   function setTheme(mode) {
+    const icon = toggle ? toggle.querySelector(".icon") : null;
+
     if (mode === "light") {
       root.classList.add("theme-light");
       localStorage.setItem("theme", "light");
-      if (toggle) toggle.querySelector(".icon").textContent = "☼";
+      if (icon) icon.textContent = "☼";
       return;
     }
+
     root.classList.remove("theme-light");
     localStorage.setItem("theme", "dark");
-    if (toggle) toggle.querySelector(".icon").textContent = "☾";
+    if (icon) icon.textContent = "☾";
   }
 
-  if (saved) setTheme(saved);
-  else setTheme(systemPrefersLight ? "light" : "dark");
+  setTheme(saved || (prefersLight ? "light" : "dark"));
 
   if (toggle) {
     toggle.addEventListener("click", () => {
@@ -36,14 +40,14 @@
   // Copy email
   if (copyBtn) {
     copyBtn.addEventListener("click", async () => {
-      const email = copyBtn.getAttribute("data-email");
+      const email = copyBtn.getAttribute("data-email") || "";
       try {
         await navigator.clipboard.writeText(email);
         const old = copyBtn.textContent;
         copyBtn.textContent = "Copied!";
         setTimeout(() => (copyBtn.textContent = old), 900);
       } catch {
-        alert("Copy failed. You can manually copy: " + email);
+        alert("Copy failed. Email: " + email);
       }
     });
   }
