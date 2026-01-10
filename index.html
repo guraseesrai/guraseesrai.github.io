@@ -3,11 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Gurasees Singh Rai — Portfolio</title>
   <meta name="description" content="Gurasees Singh Rai — AI/ML & Data Engineer. LLMs, RAG, analytics, and end-to-end ML systems." />
 
-  <!-- Open Graph (LinkedIn preview) -->
   <meta property="og:title" content="Gurasees Singh Rai — Portfolio" />
   <meta property="og:description" content="AI/ML & Data Engineer • LLMs • RAG • Analytics" />
   <meta property="og:type" content="website" />
@@ -29,6 +27,7 @@
 
         <div class="topbar__actions">
           <nav class="nav" aria-label="Primary">
+            <a href="#featured">Featured</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
@@ -40,163 +39,292 @@
           </button>
         </div>
       </div>
+    </div>
+  </header>
 
-      <div class="hero" id="content">
-        <div class="hero__left">
-          <p class="eyebrow">Open to full-time roles</p>
+  <main class="container" id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__left">
+        <p class="eyebrow">Open to full-time roles</p>
 
-          <h1 class="hero__headline">
-            I build practical ML + GenAI systems with clean engineering and measurable results.
-          </h1>
+        <h1 class="hero__headline reveal">
+          I build practical ML + GenAI systems with clean engineering and measurable results.
+        </h1>
 
-          <p class="hero__subhead">
-            End-to-end ML and LLM applications: data pipelines → modeling → evaluation → deployment-style delivery.
-            Recent focus: RAG/agents, model training, and analytics workflows.
-          </p>
+        <p class="hero__subhead reveal">
+          End-to-end ML and LLM applications: data pipelines → modeling → evaluation → deployment-style delivery.
+          Recent focus: RAG/agents, model training, and analytics workflows.
+        </p>
 
-          <div class="hero__cta">
-            <a class="btn btn--primary" href="#projects">View projects</a>
-            <a class="btn btn--ghost" href="Guraseesresume.pdf" target="_blank" rel="noreferrer">Resume</a>
-          </div>
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
 
-          <div class="hero__links" aria-label="Links">
-            <a class="link-pill" href="https://github.com/guraseesrai" target="_blank" rel="noreferrer">
-              <span aria-hidden="true">↗</span> GitHub
-            </a>
-            <a class="link-pill" href="https://www.linkedin.com/in/gurasees-singh-rai-2949192ab/" target="_blank" rel="noreferrer">
-              <span aria-hidden="true">↗</span> LinkedIn
-            </a>
-            <a class="link-pill" href="mailto:guraseesrai2@gmail.com">
-              <span aria-hidden="true">✉</span> guraseesrai2@gmail.com
-            </a>
-            <a class="link-pill" href="tel:+14086807324">
-              <span aria-hidden="true">☎</span> (408) 680-7324
-            </a>
+        <div class="hero__links reveal" aria-label="Links">
+          <a class="link-pill" href="https://github.com/guraseesrai" target="_blank" rel="noreferrer">
+            <span aria-hidden="true">↗</span> GitHub
+          </a>
+          <a class="link-pill" href="https://www.linkedin.com/in/gurasees-singh-rai-2949192ab/" target="_blank" rel="noreferrer">
+            <span aria-hidden="true">↗</span> LinkedIn
+          </a>
+          <a class="link-pill" href="mailto:guraseesrai2@gmail.com">
+            <span aria-hidden="true">✉</span> guraseesrai2@gmail.com
+          </a>
+          <a class="link-pill" href="tel:+14086807324">
+            <span aria-hidden="true">☎</span> (408) 680-7324
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="card card--highlight reveal">
+          <div class="card__title">Core strengths</div>
+          <ul class="bullets">
+            <li>Reproducible ML pipelines (training, evaluation, error analysis)</li>
+            <li>LLM apps: chunking/embeddings, vector search, RAG/agents, evaluation loops</li>
+            <li>Analytics workflows that turn messy data into decisions</li>
+          </ul>
+          <div class="card__meta">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">SQL</span>
+            <span class="tag">LLMs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Linux</span>
           </div>
         </div>
 
-        <div class="hero__right">
-          <div class="card card--highlight">
-            <div class="card__title">Core strengths</div>
-            <ul class="bullets">
-              <li>Reproducible ML pipelines (training, eval, error analysis)</li>
-              <li>LLM apps: chunking/embeddings, vector search, RAG/agents, evaluation loops</li>
-              <li>Analytics workflows that turn messy data into decisions</li>
-            </ul>
-            <div class="card__meta">
-              <span class="tag">Python</span>
-              <span class="tag">PyTorch</span>
-              <span class="tag">SQL</span>
-              <span class="tag">LLMs</span>
-              <span class="tag">RAG</span>
-              <span class="tag">Linux</span>
+        <div class="card reveal">
+          <div class="card__title">Highlights</div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">541K</div>
+              <div class="stat__label">transactions analyzed</div>
             </div>
-          </div>
-
-          <div class="card">
-            <div class="card__title">Highlights</div>
-            <div class="stats">
-              <div class="stat">
-                <div class="stat__num">541K</div>
-                <div class="stat__label">transactions analyzed</div>
-              </div>
-              <div class="stat">
-                <div class="stat__num">38</div>
-                <div class="stat__label">countries covered</div>
-              </div>
-              <div class="stat">
-                <div class="stat__num">3.98</div>
-                <div class="stat__label">MEng GPA</div>
-              </div>
+            <div class="stat">
+              <div class="stat__num">38</div>
+              <div class="stat__label">countries covered</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">3.98</div>
+              <div class="stat__label">MEng GPA</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <main class="container">
+    <!-- FEATURED CASE STUDY -->
+    <section class="section" id="featured">
+      <div class="section__head">
+        <h2>Featured case study</h2>
+        <p class="muted">One project shown like a product: outcome → approach → proof.</p>
+      </div>
+
+      <div class="feature">
+        <div class="card feature__main reveal">
+          <div class="feature__top">
+            <div>
+              <div class="card__kicker">LLM Apps • RAG</div>
+              <h3 class="feature__title">Custom Learning Studio</h3>
+              <p class="feature__subtitle">
+                Built a doc-to-learning workflow: ingestion → chunking → embeddings → retrieval → quiz generation.
+              </p>
+            </div>
+
+            <div class="feature__actions">
+              <a class="btn btn--primary" href="https://github.com/guraseesrai/custom-learning-studio" target="_blank" rel="noreferrer">
+                View code ↗
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/guraseesrai/custom-learning-studio#readme" target="_blank" rel="noreferrer">
+                Readme ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="feature__grid">
+            <div class="mini">
+              <div class="mini__k">What I built</div>
+              <ul class="bullets">
+                <li>PDF/doc ingestion pipeline</li>
+                <li>Chunking strategy + embeddings</li>
+                <li>Retrieval + structured quiz output</li>
+              </ul>
+            </div>
+
+            <div class="mini">
+              <div class="mini__k">Why it matters</div>
+              <ul class="bullets">
+                <li>Turns static docs into interactive learning</li>
+                <li>Grounded answers via retrieval workflow</li>
+                <li>Designed to be measurable and improvable</li>
+              </ul>
+            </div>
+
+            <div class="mini">
+              <div class="mini__k">Stack</div>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">LangChain</span>
+                <span class="chip">Embeddings</span>
+                <span class="chip">Vector Search</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card feature__side reveal">
+          <div class="card__title">Proof</div>
+          <p class="muted">Replace with your real numbers when ready (latency, quality gains, dataset size, etc.).</p>
+
+          <div class="kpis">
+            <div class="kpi">
+              <div class="kpi__n">⚡</div>
+              <div class="kpi__t">faster iteration loop</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__n">↑</div>
+              <div class="kpi__t">more grounded answers</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__n">↓</div>
+              <div class="kpi__t">less context waste</div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="card__title">Quick links</div>
+          <div class="linklist">
+            <a href="https://github.com/guraseesrai/custom-learning-studio" target="_blank" rel="noreferrer">Custom Learning Studio ↗</a>
+            <a href="https://github.com/guraseesrai/deepfake-detector-hybrid-transformer" target="_blank" rel="noreferrer">Deepfake detector ↗</a>
+            <a href="https://github.com/guraseesrai/ecommerce-analytics" target="_blank" rel="noreferrer">E-commerce analytics ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section__head">
         <h2>Projects</h2>
-        <p class="muted">Strong, scannable work with direct links.</p>
+        <p class="muted">Short, scannable work with direct links.</p>
       </div>
 
       <div class="grid">
-        <article class="card">
-          <div class="card__kicker">Computer Vision</div>
-          <h3 class="card__title">Deepfake detector (hybrid transformer)</h3>
-          <p class="card__text">
-            Video deepfake detection pipeline with a focus on robust evaluation, reproducible training, and clear reporting.
-          </p>
-          <ul class="bullets">
-            <li>Pipeline: preprocessing → training → evaluation → error analysis</li>
-            <li>Designed for clean iteration and measurable improvements</li>
-          </ul>
-          <div class="card__meta">
-            <span class="tag">PyTorch</span><span class="tag">CV</span><span class="tag">Video</span>
+        <article class="card project reveal">
+          <div class="project__head">
+            <div>
+              <div class="card__kicker">Computer Vision</div>
+              <h3 class="card__title">Deepfake detector (hybrid transformer)</h3>
+            </div>
+            <span class="badge">Featured</span>
           </div>
-          <div class="card__links">
-            <a href="https://github.com/guraseesrai/deepfake-detector-hybrid-transformer" target="_blank" rel="noreferrer">Code ↗</a>
-            <a href="https://github.com/guraseesrai/deepfake-detector-hybrid-transformer#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+
+          <p class="card__text">
+            Video deepfake detection pipeline with robust evaluation, reproducible training, and clear reporting.
+          </p>
+
+          <ul class="bullets">
+            <li>Clean pipeline: preprocessing → training → evaluation → error analysis</li>
+            <li>Designed for fast iteration and measurable improvements</li>
+          </ul>
+
+          <div class="project__foot">
+            <div class="card__meta">
+              <span class="tag">PyTorch</span><span class="tag">CV</span><span class="tag">Video</span>
+            </div>
+            <div class="card__links">
+              <a href="https://github.com/guraseesrai/deepfake-detector-hybrid-transformer" target="_blank" rel="noreferrer">Code ↗</a>
+              <a href="https://github.com/guraseesrai/deepfake-detector-hybrid-transformer#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+            </div>
           </div>
         </article>
 
-        <article class="card">
-          <div class="card__kicker">LLM Apps</div>
-          <h3 class="card__title">Custom Learning Studio (RAG + quizzes)</h3>
+        <article class="card project reveal">
+          <div class="project__head">
+            <div>
+              <div class="card__kicker">LLM Apps</div>
+              <h3 class="card__title">Custom Learning Studio (RAG + quizzes)</h3>
+            </div>
+            <span class="badge badge--alt">Case study</span>
+          </div>
+
           <p class="card__text">
             Document ingestion → chunking → embeddings → retrieval, plus structured quiz generation for learning workflows.
           </p>
+
           <ul class="bullets">
-            <li>Built ingestion + retrieval flow for consistent, grounded answers</li>
-            <li>Focused on structure, reliability, and evaluation mindset</li>
+            <li>Built ingestion + retrieval flow for grounded outputs</li>
+            <li>Structured generation for reliable quiz formatting</li>
           </ul>
-          <div class="card__meta">
-            <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Embeddings</span>
-          </div>
-          <div class="card__links">
-            <a href="https://github.com/guraseesrai/custom-learning-studio" target="_blank" rel="noreferrer">Code ↗</a>
-            <a href="https://github.com/guraseesrai/custom-learning-studio#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+
+          <div class="project__foot">
+            <div class="card__meta">
+              <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Embeddings</span>
+            </div>
+            <div class="card__links">
+              <a href="https://github.com/guraseesrai/custom-learning-studio" target="_blank" rel="noreferrer">Code ↗</a>
+              <a href="https://github.com/guraseesrai/custom-learning-studio#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+            </div>
           </div>
         </article>
 
-        <article class="card">
-          <div class="card__kicker">Analytics</div>
-          <h3 class="card__title">E-commerce analytics</h3>
+        <article class="card project reveal">
+          <div class="project__head">
+            <div>
+              <div class="card__kicker">Analytics</div>
+              <h3 class="card__title">E-commerce analytics</h3>
+            </div>
+          </div>
+
           <p class="card__text">
             End-to-end analytics: cleaning → feature engineering → segmentation → insights, designed for stakeholder readability.
           </p>
+
           <ul class="bullets">
-            <li>Exploratory analysis + segmentation to surface high-value customer patterns</li>
+            <li>Segmentation + patterns to surface high-value customer behavior</li>
             <li>Clear visuals and business-ready summaries</li>
           </ul>
-          <div class="card__meta">
-            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SQL</span>
-          </div>
-          <div class="card__links">
-            <a href="https://github.com/guraseesrai/ecommerce-analytics" target="_blank" rel="noreferrer">Code ↗</a>
-            <a href="https://github.com/guraseesrai/ecommerce-analytics#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+
+          <div class="project__foot">
+            <div class="card__meta">
+              <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SQL</span>
+            </div>
+            <div class="card__links">
+              <a href="https://github.com/guraseesrai/ecommerce-analytics" target="_blank" rel="noreferrer">Code ↗</a>
+              <a href="https://github.com/guraseesrai/ecommerce-analytics#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+            </div>
           </div>
         </article>
 
-        <article class="card">
-          <div class="card__kicker">People Analytics</div>
-          <h3 class="card__title">HR analytics: employee attrition</h3>
+        <article class="card project reveal">
+          <div class="project__head">
+            <div>
+              <div class="card__kicker">People Analytics</div>
+              <h3 class="card__title">HR analytics: employee attrition</h3>
+            </div>
+          </div>
+
           <p class="card__text">
             Attrition analysis and baseline modeling to identify drivers and build a prediction-ready workflow.
           </p>
+
           <ul class="bullets">
             <li>Pipeline: cleaning → encoding → feature engineering → modeling</li>
             <li>Interpretability-first EDA for decision support</li>
           </ul>
-          <div class="card__meta">
-            <span class="tag">Python</span><span class="tag">ML</span><span class="tag">Analytics</span>
-          </div>
-          <div class="card__links">
-            <a href="https://github.com/guraseesrai/hr-analytics-employee-attrition" target="_blank" rel="noreferrer">Code ↗</a>
-            <a href="https://github.com/guraseesrai/hr-analytics-employee-attrition#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+
+          <div class="project__foot">
+            <div class="card__meta">
+              <span class="tag">Python</span><span class="tag">ML</span><span class="tag">Analytics</span>
+            </div>
+            <div class="card__links">
+              <a href="https://github.com/guraseesrai/hr-analytics-employee-attrition" target="_blank" rel="noreferrer">Code ↗</a>
+              <a href="https://github.com/guraseesrai/hr-analytics-employee-attrition#readme" target="_blank" rel="noreferrer">Readme ↗</a>
+            </div>
           </div>
         </article>
       </div>
@@ -209,7 +337,7 @@
         <p class="muted">Outcome-focused work across research and applied ML.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <div class="timeline">
           <div class="timeline__item">
             <div class="timeline__when">Oregon State University • Aug 2025 – Present</div>
@@ -240,7 +368,7 @@
               <strong>Data Analyst Intern</strong>
               <ul class="bullets">
                 <li>Built scikit-learn preprocessing pipeline for housing price prediction (impute/scale/encode).</li>
-                <li>Engineered ratio features; validated with EDA and model evaluation.</li>
+                <li>Engineered ratio features; validated with EDA and evaluation.</li>
               </ul>
             </div>
           </div>
@@ -256,21 +384,21 @@
       </div>
 
       <div class="grid grid--3">
-        <div class="card">
+        <div class="card reveal">
           <h3 class="card__title">Programming</h3>
           <div class="chips">
             <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Git</span><span class="chip">Linux</span>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
           <h3 class="card__title">ML / AI</h3>
           <div class="chips">
             <span class="chip">PyTorch</span><span class="chip">Scikit-learn</span><span class="chip">NLP</span><span class="chip">Evaluation</span>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
           <h3 class="card__title">LLM Systems</h3>
           <div class="chips">
             <span class="chip">RAG</span><span class="chip">Embeddings</span><span class="chip">Chunking</span><span class="chip">Prompting</span>
@@ -286,17 +414,15 @@
         <p class="muted">Fastest way to reach me is email.</p>
       </div>
 
-      <div class="card contact">
+      <div class="card contact reveal">
         <div class="contact__left">
           <p class="contact__headline">Let’s connect</p>
           <p class="muted">Open to AI/ML, GenAI, and data roles.</p>
         </div>
         <div class="contact__right">
-          <a class="btn btn--primary" href="mailto:guraseesrai2@gmail.com" id="emailBtn">Email</a>
+          <a class="btn btn--primary" href="mailto:guraseesrai2@gmail.com">Email</a>
           <a class="btn btn--ghost" href="https://www.linkedin.com/in/gurasees-singh-rai-2949192ab/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <button class="btn btn--ghost" type="button" id="copyEmailBtn" data-email="guraseesrai2@gmail.com">
-            Copy email
-          </button>
+          <button class="btn btn--ghost" type="button" id="copyEmailBtn" data-email="guraseesrai2@gmail.com">Copy email</button>
         </div>
       </div>
     </section>
