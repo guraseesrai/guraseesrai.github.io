@@ -107,3 +107,4 @@
     revealItems.forEach(el => el.classList.add('is-visible'));
   }
 })();
+
