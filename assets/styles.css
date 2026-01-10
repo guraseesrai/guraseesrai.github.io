@@ -620,39 +620,22 @@ button[disabled] {
 
 /* Spotlight */
 
-/* Spotlight - Simple card only */
-/* Spotlight - Simple card only */
+/* Spotlight */
 
-.spotlight-simple {
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--panel), rgba(255, 255, 255, 0.02));
-  box-shadow: var(--shadow);
-  padding: 22px;
-  max-width: 900px;
-}
-
-.spotlight-simple .card__kicker {
-  font-family: var(--mono);
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
-.spotlight-simple .spotlight__title {
+.spotlight__title {
   margin: 8px 0 0;
   font-size: 1.8rem;
   letter-spacing: -0.02em;
-  color: var(--text);
 }
 
-.spotlight-simple .spotlight__desc {
+.spotlight__desc {
   margin: 12px 0 0;
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.6;
 }
 
-.spotlight-simple .spotlight__row {
+.spotlight__row {
   margin-top: 16px;
   display: flex;
   align-items: center;
@@ -661,21 +644,21 @@ button[disabled] {
   flex-wrap: wrap;
 }
 
-.spotlight-simple .spotlight__actions {
+.spotlight__actions {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.spotlight-simple .spotlight__actions .btn {
+.spotlight__actions .btn {
   min-width: 110px;
 }
 
-.spotlight-simple .spotlight__actions .btn.btn--primary {
+.spotlight__actions .btn.btn--primary {
   background: linear-gradient(180deg, rgba(124, 58, 237, 0.95), rgba(124, 58, 237, 0.85));
 }
 
-.spotlight-simple .spotlight__actions .btn--tab {
+.spotlight__actions .btn--tab {
   border-color: transparent;
   background: transparent;
 }
