@@ -60,7 +60,7 @@
       <section class="hero">
         <div>
           <p class="eyebrow">
-            Open to ML / GenAI Engineer & Data Engineer · US remote / Pacific NW on-site
+            Entry-level ML / GenAI & Data Engineer · US remote / Pacific NW on-site
           </p>
           <h1 class="hero__headline reveal">
             I build ML & GenAI systems that move from notebooks to real products.
@@ -74,13 +74,16 @@
             <a class="btn btn--primary" href="#projects">View projects</a>
             <a
               class="btn btn--ghost"
-              href="./Gurasees_resume.pdf"
+              href="./Guraseesresume.pdf"
               target="_blank"
               rel="noreferrer"
             >
               Resume
             </a>
           </div>
+          <p class="hero__meta reveal">
+            Target roles: ML Engineer, GenAI Engineer, Data Engineer · Python · PyTorch · LangChain · SQL
+          </p>
           <div class="hero__links reveal" aria-label="Links">
             <a
               class="link-pill"
@@ -155,89 +158,91 @@
 
       <!-- FEATURED CASE STUDY -->
       <section class="section" id="featured">
-  <div class="section__head">
-    <h2>Spotlight</h2>
-    <p class="muted">
-      One project with a product-style overview: design, tradeoffs, and results.
-    </p>
-  </div>
-
-  <div class="spotlight reveal">
-    <div class="spotlight__media">
-      <div class="spotlight__mock">
-        <div class="spotlight__mockTop">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+        <div class="section__head">
+          <h2>Spotlight</h2>
+          <p class="muted">
+            One project with a product-style overview: design, tradeoffs, and results.
+          </p>
         </div>
-        <div class="spotlight__mockBody">
-          <div class="mockLine w80"></div>
-          <div class="mockLine w60"></div>
-          <div class="mockLine w90"></div>
-          <div class="mockGrid">
-            <div class="mockCard"></div>
-            <div class="mockCard"></div>
-            <div class="mockCard"></div>
+
+        <div class="spotlight reveal">
+          <div class="spotlight__media">
+            <div class="spotlight__mock">
+              <div class="spotlight__mockTop">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="spotlight__mockBody">
+                <div class="mockLine w80"></div>
+                <div class="mockLine w60"></div>
+                <div class="mockLine w90"></div>
+                <div class="mockGrid">
+                  <div class="mockCard"></div>
+                  <div class="mockCard"></div>
+                  <div class="mockCard"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spotlight__content">
+            <div class="card__kicker">LLM Apps · RAG</div>
+            <h3 class="spotlight__title">Custom Learning Studio</h3>
+
+            <!-- single hero box -->
+            <div class="spotlight-hero">
+              <p class="spotlight-hero__line">
+                <span class="spotlight-hero__label">Summary</span>
+                <span class="spotlight-hero__value">
+                  Doc-to-learning workflow turning PDFs/docs into grounded Q&A
+                  and quizzes with a stable JSON schema.
+                </span>
+              </p>
+              <p class="spotlight-hero__line">
+                <span class="spotlight-hero__label">Pipeline</span>
+                <span class="spotlight-hero__value">
+                  Ingest → chunk → embed → vector search → retrieve → generate → evaluate.
+                </span>
+              </p>
+              <p class="spotlight-hero__line">
+                <span class="spotlight-hero__label">Reliability</span>
+                <span class="spotlight-hero__value">
+                  Retrieval + answer checks to reduce hallucinations and keep
+                  quiz generation repeatable.
+                </span>
+              </p>
+            </div>
+
+            <div class="spotlight__row">
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">LangChain</span>
+                <span class="chip">Embeddings</span>
+                <span class="chip">Vector Search</span>
+              </div>
+              <div class="spotlight__actions">
+                <a
+                  class="btn btn--primary"
+                  href="https://github.com/guraseesrai/custom-learning-studio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code
+                </a>
+                <a
+                  class="btn btn--ghost btn--tab"
+                  href="https://github.com/guraseesrai/custom-learning-studio#architecture"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Architecture notes
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="spotlight__content">
-  <div class="card__kicker">LLM Apps · RAG</div>
-  <h3 class="spotlight__title">Custom Learning Studio</h3>
-  <p class="spotlight__desc">
-    Doc-to-learning workflow: ingestion, chunking, embeddings, retrieval,
-    and quiz generation. Built for grounded outputs, fast prompt iteration,
-    and simple evaluation.
-  </p>
-
-  <!-- NEW SPEC-LINE STYLE, NO BIG BOXES -->
-  <dl class="spotlight-spec">
-    <div class="spotlight-spec__row">
-      <dt>Input</dt>
-      <dd>Raw PDFs / docs (internal or public) dropped into an ingest folder.</dd>
-    </div>
-    <div class="spotlight-spec__row">
-      <dt>Output</dt>
-      <dd>Structured Q&A + quizzes as JSON/Markdown with a stable schema.</dd>
-    </div>
-    <div class="spotlight-spec__row">
-      <dt>Reliability</dt>
-      <dd>Retrieval + answer checks to keep responses grounded and repeatable.</dd>
-    </div>
-  </dl>
-
-  <div class="spotlight__row">
-    <div class="chips">
-      <span class="chip">Python</span>
-      <span class="chip">LangChain</span>
-      <span class="chip">Embeddings</span>
-      <span class="chip">Vector Search</span>
-    </div>
-    <div class="spotlight__actions">
-      <a
-        class="btn btn--primary"
-        href="https://github.com/guraseesrai/custom-learning-studio"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Code
-      </a>
-      <a
-        class="btn btn--ghost btn--tab"
-        href="https://github.com/guraseesrai/custom-learning-studio#architecture"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Architecture notes
-      </a>
-    </div>
-  </div>
-</div>
-  </div>
-</section>
-
+      </section>
 
       <!-- PROJECTS -->
       <section class="section" id="projects">
@@ -254,18 +259,24 @@
             <div class="project__head">
               <div>
                 <div class="card__kicker">Computer Vision</div>
-                <h3 class="card__title">Deepfake detector (hybrid transformer)</h3>
+                <h3 class="card__title">Hybrid deepfake detector</h3>
               </div>
               <span class="badge">Featured</span>
             </div>
             <p class="card__text">
-              Video deepfake detection pipeline with robust evaluation, reproducible training,
-              and clear reporting.
+              ResNet3D + Swin Transformer pipeline for video deepfake detection
+              with temporal modeling and robust evaluation.
             </p>
             <ul class="bullets">
-              <li>Clean pipeline: preprocessing → training → evaluation → error analysis.</li>
-              <li>Designed for fast iteration and measurable model improvements.</li>
-              <li><strong>Result:</strong> Achieved strong AUROC on benchmark-like setup with stable runs.</li>
+              <li>
+                Clean pipeline: frame extraction → caching → training → evaluation → error analysis.
+              </li>
+              <li>
+                Multiple metrics tracked and logged for stable model comparison.
+              </li>
+              <li>
+                <strong>Result:</strong> Achieved strong AUROC on benchmark-like setup with reproducible runs.
+              </li>
             </ul>
             <div class="project__foot">
               <div class="card__meta">
@@ -308,7 +319,10 @@
             <ul class="bullets">
               <li>Built ingestion + retrieval for grounded answers from arbitrary docs.</li>
               <li>Structured quiz formatter ensures consistent, evaluation-friendly outputs.</li>
-              <li><strong>Result:</strong> Reduced hallucinated answers on sample set after prompt + retrieval tuning.</li>
+              <li>
+                <strong>Result:</strong> Reduced hallucinated answers on a sample doc set after
+                prompt and retrieval tuning with a simple eval loop.
+              </li>
             </ul>
             <div class="project__foot">
               <div class="card__meta">
@@ -340,17 +354,24 @@
             <div class="project__head">
               <div>
                 <div class="card__kicker">Analytics</div>
-                <h3 class="card__title">E-commerce analytics</h3>
+                <h3 class="card__title">E-commerce customer analytics</h3>
               </div>
             </div>
             <p class="card__text">
-              End-to-end analytics: cleaning, feature engineering, segmentation,
-              and stakeholder-ready insights.
+              End-to-end analytics on 541K transactions across 38 countries, with
+              clustering and classification for customer intelligence.
             </p>
             <ul class="bullets">
-              <li>Segmentation patterns to surface high-value customer behavior.</li>
-              <li>Clear visuals and business-focused narrative for decisions.</li>
-              <li><strong>Result:</strong> Identified segments with markedly higher repeat purchase behavior.</li>
+              <li>
+                RFM-based segmentation and K-means, achieving silhouette score 0.617.
+              </li>
+              <li>
+                Random Forest classifier reaching 99.42% accuracy to label high-value segments.
+              </li>
+              <li>
+                <strong>Result:</strong> Identified segments with markedly higher repeat
+                purchase behavior for marketing focus.
+              </li>
             </ul>
             <div class="project__foot">
               <div class="card__meta">
@@ -392,7 +413,9 @@
             <ul class="bullets">
               <li>Pipeline: cleaning, encoding, feature engineering, and ML models.</li>
               <li>Interpretability-first EDA to support decisions and communication.</li>
-              <li><strong>Result:</strong> Highlighted key drivers that correlate with attrition risk.</li>
+              <li>
+                <strong>Result:</strong> Highlighted key drivers that correlate with attrition risk.
+              </li>
             </ul>
             <div class="project__foot">
               <div class="card__meta">
@@ -439,15 +462,16 @@
                 <strong>AI Research Intern</strong>
                 <ul class="bullets">
                   <li>
-                    Built preprocessing pipeline for RNA cut-site prediction with
-                    leak-free splits and one-hot encoding.
+                    Built preprocessing pipeline for viroid RNA cut-site prediction
+                    (FASTA/CSV ingest, leak-free splits, one-hot encoding).
                   </li>
                   <li>
                     Trained baseline ML and LSTM models; tracked AUROC and PR-AUC
-                    for evaluation.
+                    for rigorous evaluation.
                   </li>
                   <li>
-                    Served models via FastAPI endpoints for real-time scoring.
+                    Exposed trained models via FastAPI endpoints to score new RNA
+                    sequences in real time.
                   </li>
                 </ul>
               </div>
@@ -462,11 +486,12 @@
                 <strong>Applied AI Research Assistant</strong>
                 <ul class="bullets">
                   <li>
-                    Built LangChain + GPT-4 document pipeline for PDF/Word with
-                    chunking (1000/100) and retrieval.
+                    Developed LangChain + GPT-4 pipeline to convert PDFs/Word learning
+                    materials into structured scripts (1000-char chunks, 100-char overlap).
                   </li>
                   <li>
-                    Added token management and dynamic truncation to reduce failed calls.
+                    Implemented token management with tiktoken and 1500-token limits,
+                    cutting failed GPT-4 calls and timeouts.
                   </li>
                 </ul>
               </div>
@@ -485,7 +510,8 @@
                     (impute → scale → encode).
                   </li>
                   <li>
-                    Engineered ratio features and validated them with EDA and evaluation.
+                    Engineered ratio-based features (e.g., rooms per household, bedrooms per room)
+                    and validated with EDA and evaluation (RMSE ≈ 66.9K).
                   </li>
                 </ul>
               </div>
@@ -503,30 +529,30 @@
 
         <div class="grid grid--3">
           <div class="card reveal">
-            <h3 class="card__title">Programming</h3>
+            <h3 class="card__title">Programming & Data</h3>
             <div class="chips">
               <span class="chip">Python</span>
               <span class="chip">SQL</span>
-              <span class="chip">Git</span>
-              <span class="chip">Linux</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">Data Pipelines</span>
             </div>
           </div>
           <div class="card reveal">
             <h3 class="card__title">ML & AI</h3>
             <div class="chips">
               <span class="chip">PyTorch</span>
-              <span class="chip">Scikit-learn</span>
+              <span class="chip">scikit-learn</span>
               <span class="chip">NLP</span>
               <span class="chip">Evaluation</span>
             </div>
           </div>
           <div class="card reveal">
-            <h3 class="card__title">LLM Systems</h3>
+            <h3 class="card__title">LLM & Systems</h3>
             <div class="chips">
               <span class="chip">RAG</span>
+              <span class="chip">LangChain</span>
               <span class="chip">Embeddings</span>
-              <span class="chip">Chunking</span>
-              <span class="chip">Prompting</span>
+              <span class="chip">FastAPI</span>
             </div>
           </div>
         </div>
