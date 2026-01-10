@@ -624,52 +624,43 @@ button[disabled] {
   }
 }
 
-/* Spotlight strip – replaces boxy look */
-.spotlight__points {
-  margin-top: 14px;
+/* Spotlight spec sheet (replaces old two-box layout) */
+.spotlight-spec {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  padding: 10px 0 2px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.spotlight-spec__row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: rgba(0, 0, 0, 0.22);
-  overflow: hidden;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 10px;
+  padding: 6px 0;
 }
 
-@media (max-width: 780px) {
-  .spotlight__points {
-    grid-template-columns: 1fr;
+@media (max-width: 640px) {
+  .spotlight-spec__row {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
-.point {
-  padding: 14px 16px;
-  background: rgba(0, 0, 0, 0.18);
-}
-
-.point + .point {
-  border-left: 1px solid var(--border);
-}
-
-@media (max-width: 780px) {
-  .point + .point {
-    border-left: none;
-    border-top: 1px solid var(--border);
-  }
-}
-
-.point__k {
+.spotlight-spec dt {
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--muted);
 }
 
-.point__v {
-  margin-top: 6px;
+.spotlight-spec dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
 }
 
-/* Spotlight call-to-action feels like tabs */
+/* Tab-like CTAs */
 .spotlight__actions .btn {
   min-width: 110px;
 }
