@@ -10,10 +10,8 @@
   --accent-2: #22c55e;
   --radius: 20px;
   --max: 1100px;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 html {
@@ -387,11 +385,7 @@ a {
 
 .btn--primary {
   border-color: rgba(124, 58, 237, 0.55);
-  background: linear-gradient(
-    180deg,
-    rgba(124, 58, 237, 0.38),
-    rgba(124, 58, 237, 0.18)
-  );
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.38), rgba(124, 58, 237, 0.18));
 }
 
 .btn--primary:hover {
@@ -403,15 +397,9 @@ a {
   background: transparent;
 }
 
-/* Copy success / disabled */
-
 .btn--success {
   border-color: var(--accent-2);
-  background: linear-gradient(
-    180deg,
-    rgba(34, 197, 94, 0.4),
-    rgba(34, 197, 94, 0.18)
-  );
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.4), rgba(34, 197, 94, 0.18));
 }
 
 button[disabled] {
@@ -659,159 +647,4 @@ button[disabled] {
   border-radius: 18px;
   border: 1px solid var(--border);
   background:
-    radial-gradient(500px 220px at 10% 10%, rgba(124, 58, 237, 0.25), transparent 60%),
-    radial-gradient(500px 220px at 90% 0%, rgba(34, 197, 94, 0.16), transparent 60%),
-    var(--panel);
-  overflow: hidden;
-}
-
-.spotlight__mockTop {
-  display: flex;
-  gap: 6px;
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--border);
-  background: rgba(0, 0, 0, 0.04);
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 99px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.spotlight__mockBody {
-  padding: 14px;
-  display: grid;
-  gap: 10px;
-}
-
-.mockLine {
-  height: 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.w60 {
-  width: 60%;
-}
-
-.w80 {
-  width: 80%;
-}
-
-.w90 {
-  width: 90%;
-}
-
-.mockGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 8px;
-}
-
-@media (max-width: 520px) {
-  .mockGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.mockCard {
-  height: 72px;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.spotlight__content {
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--panel), rgba(255, 255, 255, 0.02));
-  box-shadow: var(--shadow);
-  padding: 18px;
-}
-
-.spotlight__title {
-  margin: 8px 0 0;
-  font-size: 1.55rem;
-  letter-spacing: -0.02em;
-}
-
-/* Single hero box in Spotlight */
-
-.spotlight-hero {
-  margin-top: 12px;
-  margin-bottom: 6px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  background: radial-gradient(
-      600px 260px at 0% 0%,
-      rgba(124, 58, 237, 0.22),
-      transparent 60%
-    ),
-    rgba(0, 0, 0, 0.22);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
-}
-
-.spotlight-hero__line {
-  display: grid;
-  grid-template-columns: 90px minmax(0, 1fr);
-  gap: 10px;
-  margin: 4px 0;
-}
-
-@media (max-width: 640px) {
-  .spotlight-hero__line {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-.spotlight-hero__label {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  color: var(--muted);
-}
-
-.spotlight-hero__value {
-  font-size: 0.96rem;
-}
-
-.spotlight__row {
-  margin-top: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.spotlight__actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-/* Tab-like CTAs */
-
-.spotlight__actions .btn {
-  min-width: 110px;
-}
-
-.spotlight__actions .btn.btn--primary {
-  background: linear-gradient(
-    180deg,
-    rgba(124, 58, 237, 0.95),
-    rgba(124, 58, 237, 0.85)
-  );
-}
-
-.spotlight__actions .btn--tab {
-  border-color: transparent;
-  background: transparent;
-}
+    radial-gradient(500px 220px at 10% 10%, rgba(124, 58, 237, 
