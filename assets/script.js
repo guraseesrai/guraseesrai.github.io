@@ -15,15 +15,17 @@
   const THEME_KEY = 'theme';
 
   function getPreferredTheme() {
-    const saved = localStorage.getItem(THEME_KEY);
-    if (saved === 'light' || saved === 'dark') return saved;
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved === 'light' || saved === 'dark') return saved;
 
-    const prefersLight =
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: light)').matches;
+  const canMatch = typeof window !== 'undefined' && !!window.matchMedia;
+  const prefersLight =
+    canMatch &&
+    window.matchMedia('(prefers-color-scheme: light)').matches;
 
-    return prefersLight ? 'light' : 'dark';
-  }
+  return prefersLight ? 'light' : 'dark';
+}
+
 
   function setTheme(mode) {
     const iconSpan = themeToggle ? themeToggle.querySelector('.icon') : null;
