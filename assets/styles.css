@@ -162,7 +162,7 @@ a {
   z-index: 1000;
 }
 
-/* Strong focus for keyboard */
+/* Strong focus */
 
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -211,6 +211,12 @@ a {
   gap: 10px;
   margin-top: 18px;
   flex-wrap: wrap;
+}
+
+.hero__meta {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .hero__links {
@@ -624,43 +630,175 @@ button[disabled] {
   }
 }
 
-/* Spotlight spec sheet (replaces old two-box layout) */
-.spotlight-spec {
-  margin-top: 16px;
-  margin-bottom: 6px;
-  padding: 10px 0 2px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+/* Spotlight */
+
+.spotlight {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 14px;
+  align-items: stretch;
 }
 
-.spotlight-spec__row {
+@media (max-width: 980px) {
+  .spotlight {
+    grid-template-columns: 1fr;
+  }
+}
+
+.spotlight__media {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--panel), rgba(255, 255, 255, 0.02));
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+.spotlight__mock {
+  height: 100%;
+  min-height: 260px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(500px 220px at 10% 10%, rgba(124, 58, 237, 0.25), transparent 60%),
+    radial-gradient(500px 220px at 90% 0%, rgba(34, 197, 94, 0.16), transparent 60%),
+    var(--panel);
+  overflow: hidden;
+}
+
+.spotlight__mockTop {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.spotlight__mockBody {
+  padding: 14px;
   display: grid;
-  grid-template-columns: 100px minmax(0, 1fr);
   gap: 10px;
-  padding: 6px 0;
+}
+
+.mockLine {
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w90 {
+  width: 90%;
+}
+
+.mockGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+@media (max-width: 520px) {
+  .mockGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mockCard {
+  height: 72px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.spotlight__content {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--panel), rgba(255, 255, 255, 0.02));
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.spotlight__title {
+  margin: 8px 0 0;
+  font-size: 1.55rem;
+  letter-spacing: -0.02em;
+}
+
+/* Single hero box in Spotlight */
+
+.spotlight-hero {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: radial-gradient(
+      600px 260px at 0% 0%,
+      rgba(124, 58, 237, 0.22),
+      transparent 60%
+    ),
+    rgba(0, 0, 0, 0.22);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+}
+
+.spotlight-hero__line {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 10px;
+  margin: 4px 0;
 }
 
 @media (max-width: 640px) {
-  .spotlight-spec__row {
+  .spotlight-hero__line {
     grid-template-columns: minmax(0, 1fr);
   }
 }
 
-.spotlight-spec dt {
+.spotlight-hero__label {
   font-family: var(--mono);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   color: var(--muted);
 }
 
-.spotlight-spec dd {
-  margin: 0;
-  color: var(--text);
-  font-size: 0.95rem;
+.spotlight-hero__value {
+  font-size: 0.96rem;
+}
+
+.spotlight__row {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.spotlight__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 /* Tab-like CTAs */
+
 .spotlight__actions .btn {
   min-width: 110px;
 }
