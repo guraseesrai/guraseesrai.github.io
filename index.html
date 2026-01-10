@@ -60,15 +60,13 @@
       <section class="hero">
         <div>
           <p class="eyebrow">
-            Entry-level ML / GenAI & Data Engineer · US remote / Pacific NW on-site
+            ML / GenAI & Data Engineer · Open to roles across the USA · Based in Newark, CA
           </p>
           <h1 class="hero__headline reveal">
             I build ML & GenAI systems that move from notebooks to real products.
           </h1>
           <p class="hero__subhead reveal">
-            End-to-end ML and LLM applications – from data pipelines and modeling
-            to evaluation and deployment-style delivery, with a recent focus
-            on RAG, agents, and analytics workflows.
+            End-to-end ML and LLM applications – data pipelines, modeling, evaluation, and deployment-style delivery, with a recent focus on RAG systems, agents, and analytics workflows.
           </p>
           <div class="hero__cta reveal">
             <a class="btn btn--primary" href="#projects">View projects</a>
@@ -118,15 +116,13 @@
           <div class="card__kicker">Core strengths</div>
           <ul class="bullets">
             <li>
-              Reproducible ML pipelines for training, evaluation, and error analysis –
-              built to iterate safely and fast.
+              Reproducible ML pipelines for training, evaluation, and error analysis – built to iterate safely and quickly.
             </li>
             <li>
-              LLM apps with smart chunking, embeddings, vector search, and RAG/agents,
-              plus simple evaluation loops.
+              LLM applications with smart chunking, embeddings, vector search, and RAG/agents, plus simple evaluation loops.
             </li>
             <li>
-              Analytics workflows that turn messy data into clear decisions for teams.
+              Analytics workflows that turn messy data into clear, decision-ready insights.
             </li>
           </ul>
           <div class="card__meta">
@@ -189,30 +185,14 @@
           <div class="spotlight__content">
             <div class="card__kicker">LLM Apps · RAG</div>
             <h3 class="spotlight__title">Custom Learning Studio</h3>
-
-            <!-- single hero box -->
-            <div class="spotlight-hero">
-              <p class="spotlight-hero__line">
-                <span class="spotlight-hero__label">Summary</span>
-                <span class="spotlight-hero__value">
-                  Doc-to-learning workflow turning PDFs/docs into grounded Q&A
-                  and quizzes with a stable JSON schema.
-                </span>
-              </p>
-              <p class="spotlight-hero__line">
-                <span class="spotlight-hero__label">Pipeline</span>
-                <span class="spotlight-hero__value">
-                  Ingest → chunk → embed → vector search → retrieve → generate → evaluate.
-                </span>
-              </p>
-              <p class="spotlight-hero__line">
-                <span class="spotlight-hero__label">Reliability</span>
-                <span class="spotlight-hero__value">
-                  Retrieval + answer checks to reduce hallucinations and keep
-                  quiz generation repeatable.
-                </span>
-              </p>
-            </div>
+            <p class="spotlight__desc">
+              Doc-to-learning workflow that ingests PDFs and docs, chunks and embeds them,
+              retrieves relevant context, and generates grounded Q&A and quizzes for learning.
+            </p>
+            <p class="spotlight__desc">
+              Designed as a modular pipeline (ingest → chunk → embed → retrieve → generate → evaluate)
+              so prompts, models, and retrieval settings can be iterated quickly.
+            </p>
 
             <div class="spotlight__row">
               <div class="chips">
@@ -254,6 +234,52 @@
         </div>
 
         <div class="grid">
+          <!-- Custom Learning Studio card FIRST -->
+          <article class="card project reveal">
+            <div class="project__head">
+              <div>
+                <div class="card__kicker">LLM Apps</div>
+                <h3 class="card__title">Custom Learning Studio – RAG quizzes</h3>
+              </div>
+              <span class="badge badge--alt">Case study</span>
+            </div>
+            <p class="card__text">
+              Document ingestion, chunking, embeddings, retrieval, and structured
+              quiz generation for learning workflows.
+            </p>
+            <ul class="bullets">
+              <li>Built ingestion + retrieval for grounded answers from arbitrary docs.</li>
+              <li>Structured quiz formatter ensures consistent, evaluation-friendly outputs.</li>
+              <li>
+                <strong>Result:</strong> Reduced hallucinated answers on a sample doc set after
+                prompt and retrieval tuning with a simple eval loop.
+              </li>
+            </ul>
+            <div class="project__foot">
+              <div class="card__meta">
+                <span class="tag">LLMs</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Embeddings</span>
+              </div>
+              <div class="card__links">
+                <a
+                  href="https://github.com/guraseesrai/custom-learning-studio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code
+                </a>
+                <a
+                  href="https://github.com/guraseesrai/custom-learning-studio#architecture"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Architecture
+                </a>
+              </div>
+            </div>
+          </article>
+
           <!-- Deepfake -->
           <article class="card project reveal">
             <div class="project__head">
@@ -298,52 +324,6 @@
                   rel="noreferrer"
                 >
                   Design notes
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Custom Learning Studio card -->
-          <article class="card project reveal">
-            <div class="project__head">
-              <div>
-                <div class="card__kicker">LLM Apps</div>
-                <h3 class="card__title">Custom Learning Studio – RAG quizzes</h3>
-              </div>
-              <span class="badge badge--alt">Case study</span>
-            </div>
-            <p class="card__text">
-              Document ingestion, chunking, embeddings, retrieval, and structured
-              quiz generation for learning workflows.
-            </p>
-            <ul class="bullets">
-              <li>Built ingestion + retrieval for grounded answers from arbitrary docs.</li>
-              <li>Structured quiz formatter ensures consistent, evaluation-friendly outputs.</li>
-              <li>
-                <strong>Result:</strong> Reduced hallucinated answers on a sample doc set after
-                prompt and retrieval tuning with a simple eval loop.
-              </li>
-            </ul>
-            <div class="project__foot">
-              <div class="card__meta">
-                <span class="tag">LLMs</span>
-                <span class="tag">RAG</span>
-                <span class="tag">Embeddings</span>
-              </div>
-              <div class="card__links">
-                <a
-                  href="https://github.com/guraseesrai/custom-learning-studio"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Code
-                </a>
-                <a
-                  href="https://github.com/guraseesrai/custom-learning-studio#architecture"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Architecture
                 </a>
               </div>
             </div>
@@ -571,7 +551,7 @@
           <div class="contact__left">
             <p class="contact__headline">Let’s connect</p>
             <p class="muted">
-              Open to ML/GenAI, AI Engineer, and data-focused roles.
+              Open to ML/GenAI, AI Engineer, and data-focused roles across the USA.
             </p>
           </div>
           <div class="contact__right">
