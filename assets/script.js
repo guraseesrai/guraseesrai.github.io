@@ -1,72 +1,102 @@
-(function () {
+// script.js
+
+(() => {
   const root = document.documentElement;
-  const toggle = document.getElementById("themeToggle");
-  const year = document.getElementById("year");
-  const copyBtn = document.getElementById("copyEmailBtn");
+  const themeToggle = document.getElementById('themeToggle');
+  const yearEl = document.getElementById('year');
+  const copyBtn = document.getElementById('copyEmailBtn');
 
-  // Year
-  if (year) year.textContent = new Date().getFullYear();
-
-  // Theme: saved > system preference
-  const saved = localStorage.getItem("theme");
-  const prefersLight =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: light)").matches;
-
-  function setTheme(mode) {
-    const icon = toggle ? toggle.querySelector(".icon") : null;
-
-    if (mode === "light") {
-      root.classList.add("theme-light");
-      localStorage.setItem("theme", "light");
-      if (icon) icon.textContent = "☼";
-      return;
-    }
-
-    root.classList.remove("theme-light");
-    localStorage.setItem("theme", "dark");
-    if (icon) icon.textContent = "☾";
+  // ---- Year ----
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
   }
 
-  setTheme(saved || (prefersLight ? "light" : "dark"));
+  // ---- Theme handling ----
+  const THEME_KEY = 'theme';
 
-  if (toggle) {
-    toggle.addEventListener("click", () => {
-      const isLight = root.classList.contains("theme-light");
-      setTheme(isLight ? "dark" : "light");
+  function getPreferredTheme() {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === 'light' || saved === 'dark') return saved;
+    const prefersLight = window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: light)').matches;
+    return prefersLight ? 'light' : 'dark';
+  }
+
+  function setTheme(mode) {
+    const iconSpan = themeToggle ? themeToggle.querySelector('.icon') : null;
+
+    if (mode === 'light') {
+      root.classList.add('theme-light');
+      localStorage.setItem(THEME_KEY, 'light');
+      if (iconSpan) iconSpan.textContent = '☀️';
+      themeToggle?.setAttribute('aria-pressed', 'true');
+      themeToggle?.setAttribute('aria-label', 'Use dark theme');
+    } else {
+      root.classList.remove('theme-light');
+      localStorage.setItem(THEME_KEY, 'dark');
+      if (iconSpan) iconSpan.textContent = '🌙';
+      themeToggle?.setAttribute('aria-pressed', 'false');
+      themeToggle?.setAttribute('aria-label', 'Use light theme');
+    }
+  }
+
+  const initialTheme = getPreferredTheme();
+  setTheme(initialTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isLight = root.classList.contains('theme-light');
+      setTheme(isLight ? 'dark' : 'light');
     });
   }
 
-  // Copy email
+  // ---- Copy email with better UX ----
   if (copyBtn) {
-    copyBtn.addEventListener("click", async () => {
-      const email = copyBtn.getAttribute("data-email") || "";
+    copyBtn.addEventListener('click', async () => {
+      const email = copyBtn.getAttribute('data-email');
+      if (!email) return;
+
+      const originalText = copyBtn.textContent;
+      copyBtn.disabled = true;
+
       try {
         await navigator.clipboard.writeText(email);
-        const old = copyBtn.textContent;
-        copyBtn.textContent = "Copied!";
-        setTimeout(() => (copyBtn.textContent = old), 900);
+        copyBtn.textContent = 'Copied!';
+        copyBtn.classList.add('btn--success');
       } catch {
-        alert("Copy failed. Email: " + email);
+        copyBtn.textContent = 'Copy failed';
+      } finally {
+        setTimeout(() => {
+          copyBtn.textContent = originalText;
+          copyBtn.classList.remove('btn--success');
+          copyBtn.disabled = false;
+        }, 1000);
       }
     });
   }
 
-  // Reveal on scroll
-  const items = document.querySelectorAll(".reveal");
-  if (items.length) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("is-visible");
-            io.unobserve(e.target);
+  // ---- Reveal on scroll (with reduced-motion support) ----
+  const revealItems = document.querySelectorAll('.reveal');
+
+  const prefersReducedMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion && revealItems.length) {
+    const observer = new IntersectionObserver(
+      entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
           }
-        });
+        }
       },
       { threshold: 0.12 }
     );
 
-    items.forEach((el) => io.observe(el));
+    revealItems.forEach(el => observer.observe(el));
+  } else {
+    // If reduced motion, show everything immediately
+    revealItems.forEach(el => el.classList.add('is-visible'));
   }
 })();
