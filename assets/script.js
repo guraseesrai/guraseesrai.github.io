@@ -7,7 +7,7 @@
   // Year
   if (year) year.textContent = new Date().getFullYear();
 
-  // Theme: saved choice > system preference
+  // Theme: saved > system preference
   const saved = localStorage.getItem("theme");
   const prefersLight =
     window.matchMedia &&
@@ -50,5 +50,23 @@
         alert("Copy failed. Email: " + email);
       }
     });
+  }
+
+  // Reveal on scroll
+  const items = document.querySelectorAll(".reveal");
+  if (items.length) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-visible");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    items.forEach((el) => io.observe(el));
   }
 })();
