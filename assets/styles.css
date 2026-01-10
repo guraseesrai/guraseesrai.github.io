@@ -648,3 +648,57 @@ button[disabled] {
   border: 1px solid var(--border);
   background:
     radial-gradient(500px 220px at 10% 10%, rgba(124, 58, 237, 
+
+.spotlight__content-clean {
+  padding: 18px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.spotlight__content-clean .card__kicker {
+  font-family: var(--mono);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.spotlight__content-clean .spotlight__title {
+  margin: 8px 0 0;
+  font-size: 1.55rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.spotlight__content-clean .spotlight__desc {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.spotlight__content-clean .spotlight__row {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.spotlight__content-clean .spotlight__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.spotlight__content-clean .spotlight__actions .btn {
+  min-width: 110px;
+}
+
+.spotlight__content-clean .spotlight__actions .btn.btn--primary {
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.95), rgba(124, 58, 237, 0.85));
+}
+
+.spotlight__content-clean .spotlight__actions .btn--tab {
+  border-color: transparent;
+  background: transparent;
+}
