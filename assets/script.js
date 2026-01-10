@@ -17,8 +17,11 @@
   function getPreferredTheme() {
     const saved = localStorage.getItem(THEME_KEY);
     if (saved === 'light' || saved === 'dark') return saved;
-    const prefersLight = window.matchMedia &&
+
+    const prefersLight =
+      window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: light)').matches;
+
     return prefersLight ? 'light' : 'dark';
   }
 
@@ -29,14 +32,18 @@
       root.classList.add('theme-light');
       localStorage.setItem(THEME_KEY, 'light');
       if (iconSpan) iconSpan.textContent = '☀️';
-      themeToggle?.setAttribute('aria-pressed', 'true');
-      themeToggle?.setAttribute('aria-label', 'Use dark theme');
+      if (themeToggle) {
+        themeToggle.setAttribute('aria-pressed', 'true');
+        themeToggle.setAttribute('aria-label', 'Use dark theme');
+      }
     } else {
       root.classList.remove('theme-light');
       localStorage.setItem(THEME_KEY, 'dark');
       if (iconSpan) iconSpan.textContent = '🌙';
-      themeToggle?.setAttribute('aria-pressed', 'false');
-      themeToggle?.setAttribute('aria-label', 'Use light theme');
+      if (themeToggle) {
+        themeToggle.setAttribute('aria-pressed', 'false');
+        themeToggle.setAttribute('aria-label', 'Use light theme');
+      }
     }
   }
 
@@ -50,7 +57,7 @@
     });
   }
 
-  // ---- Copy email with better UX ----
+  // ---- Copy email with strong UX ----
   if (copyBtn) {
     copyBtn.addEventListener('click', async () => {
       const email = copyBtn.getAttribute('data-email');
@@ -77,8 +84,8 @@
 
   // ---- Reveal on scroll (with reduced-motion support) ----
   const revealItems = document.querySelectorAll('.reveal');
-
-  const prefersReducedMotion = window.matchMedia &&
+  const prefersReducedMotion =
+    window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!prefersReducedMotion && revealItems.length) {
